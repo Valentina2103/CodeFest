@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPB STREAM</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/barrita.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div id="logo">
+            <img src="../img/Logosímbolo_UPB.svg.png" alt="Logo" width="100">
+        </div>
+        <div id="envivo">
+            <a href="../Vistas/index.html" class="btnenvivo"></a>
+        </div>
+        <div id="login">
+            <a href="../Vistas/iniciosesion.html" class="btnlogin">Iniciar sesión</a>
+        </div>
+        <div id="register">
+            <a href="../Vistas/registro.html" class="btnregistro">Registrarse</a>
+        </div>
+    </div>
+
+    <ul class="navbar">
+        <li><a href="#historias"><strong>Historial</strong></a></li>
+        <li class="proyectos">
+            <img src="../img/galeria416.jpg">
+            <a href="../Vistas/videoproyecto.html">Transporte en la UPB</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/channels4_profile.jpg">
+            <a>PI2 Sexto Semestre</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/tipos de software.jpg">
+            <a>Software y Hardware</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/1-4.jpg">
+            <a>Ingeniería de Software</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/post_thumbnail-4efabca9bd56b38edc0058c4ba006481.jpg">
+            <a>Gobierno de las TI</a>
+        </li>
+    </ul>
+
+    <div class="video-section">
+        <div class="proyectos titulovideo_espera">
+            <img src="../img/Fachada edificio J.JPG">
+            <h1>Plataforma de Aprendizaje</h1>
+        </div>
+
+        <div id="countdown" class="cuentaregresiva">
+            <h1>En Espera</h1>
+            <div id="timer">00:00:00</div>
+        </div>
+    
+        <script>
+            const countdownDate = new Date().getTime() + 6000000; 
+    
+            const countdown = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+    
+                if (distance <= 0) {
+                    clearInterval(countdown);
+                    document.getElementById("timer").innerHTML = "00:00:00";
+                } else {
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    document.getElementById("timer").innerHTML = timeString;
+                }
+            }, 1000);
+        </script>
+    </div>
+
+    <ul class="navbar-right">
+        <li><a href="#otra-opcion"><strong>Próximamente</strong></a></li>
+        <li class="proyectos">
+            <img src="../img/Fachada edificio J.JPG">
+            <a>Plataforma de Aprendizaje</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/Escudo_UPB.svg.png">
+            <a>Proyecto Integrador 1</a>
+        </li>
+        <li class="proyectos">
+            <img src="../img/Que-es-una-Base-de-Datos_Latam-Dominios (1).jpg">
+            <a>Mejora de la Base de Datos</a>
+        </li>
+    </ul>
+</body>
+</html>
+

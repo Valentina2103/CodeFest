@@ -4,7 +4,7 @@ ul.navbar {
     padding: 0;
     width: 195px; 
     position: fixed;
-    top: 35px;
+    top: 58px;
     left: 0;
     height: 100%;
     overflow: auto;
@@ -56,7 +56,7 @@ ul.proyectos li {
 
 .proyectos a {
     display: inline;
-    margin-left: -20px; 
+    margin-left: -20px;   
 }
 
 
@@ -66,7 +66,7 @@ ul.proyectos li {
     padding: 0;
     width: 195px;
     position: fixed;
-    top: 35px;
+    top: 58Px;
     right: 0; 
     height: 100%;
     overflow: auto;
@@ -92,7 +92,7 @@ ul.proyectos li {
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
-    padding: 20px;
+    padding: -20px;
 }
 
 .video-section h1 {
@@ -100,10 +100,59 @@ ul.proyectos li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.video-section iframe {
+    width: 130%;
+    max-width: 200%;
+    margin-left: -130px;
+    height: 500px; /* Cambia este valor según tus necesidades */
+    top: 50px;
+}
+
 .video-section video {
     width: 130%;
-    max-width: 130%;
+    max-width: 200%;
     margin-left: -130px;
+    height: 500px; /* Cambia este valor según tus necesidades */
+    top: 50px;
+}
+
+
+.live{
+    max-width: 150px;
     height: auto; 
 }
 
+.titulovideo{
+    display: flex;
+    margin-left: 200px;
+
+}
+
+.cuentaregresiva {
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto; 
+}
+
+.cuentaregresiva h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.cuentaregresiva #timer {
+    font-size: 36px;
+    color: #000000;
+    margin-top: 20px; 
+}
+
+.titulovideo_espera{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 80px; 
+}
