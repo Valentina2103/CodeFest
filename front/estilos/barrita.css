@@ -1,0 +1,29 @@
+ /* Estilos para la barra de navegación */
+ .navbar {
+    background-color: #bababa; /* Color de fondo de la barra */
+    overflow: hidden;
+}
+
+/* Estilos para el logotipo en la barra */
+.navbar #logo {
+    float: left;
+    display: inline-block;
+    margin: 10px 20px; /* Márgenes para el logotipo */
+    color: white; /* Color del texto del logotipo */
+}
+
+/* Estilos para los botones "Iniciar sesión" y "Registrarse" */
+.navbar #login, .navbar #register {
+    float: right;
+    display: inline-block;
+    margin: 20px 20px; /* Márgenes para los botones */
+    text-align: center;
+    font-size: 20px;;
+    
+}
+
+/* Estilos para los enlaces en los botones */
+.navbar #login a, .navbar #register a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
